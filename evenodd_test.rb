@@ -8,6 +8,6 @@ class TestEvenOdd < Minitest::Test #camelcase with class name otherwise copy all
 	end
 
 	def test_input_1returns_odd
-		assert_equal("odd", evenodd(1))
+		assert_equal("odd", evenodd_function(1))
 	end
 end #have to end the class like we end each function
