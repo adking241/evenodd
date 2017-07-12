@@ -1,9 +1,9 @@
 def evenodd_function(number)
-	if number % 2 == 0 #this means divisible by 2 with a remainder of zero
+	if number.is_a? String
+		"only numbers allowed" 
+	elsif number % 2 == 0 #this means divisible by 2 with a remainder of zero
 		"even"
-	elsif number == 1 or number == 3
-		"odd"
 	else
-		"no wombats allowed"
+		"odd"
 	end
 end

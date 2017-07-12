@@ -19,8 +19,8 @@ class TestEvenOdd < Minitest::Test #camelcase with class name otherwise copy all
 		assert_equal("odd", evenodd_function(3))
 	end
 
-	def test_input_wombat_returns_no_wombats_allowed
-		assert_equal("no wombats allowed", evenodd_function("wombat"))
+	def test_input_string_not_allowed
+		assert_equal("only numbers allowed", evenodd_function("wombat"))
 	end
 
 end #have to end the class like we end each function
