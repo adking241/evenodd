@@ -1,7 +1,7 @@
 def evenodd_function(number)
-	if number == 1
-		"odd"
-	elsif number == 2
+	if number % 2 == 0 #this means divisible by 2 with a remainder of zero
 		"even"
+	else
+		"odd"
 	end
 end
